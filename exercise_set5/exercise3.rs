@@ -24,6 +24,6 @@ fn main() {
 }
 
 fn never_return() -> ! {
-    panic!();
+    panic!()
     
 }
