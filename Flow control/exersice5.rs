@@ -1,16 +1,20 @@
 //exersice 5
-// Fix errors and panics to make it work
+
 /*
 fn main() {
-   let v1 = 251_u8 + 8;
-   let v2 = i8::checked_add(251, 8).unwrap();
-   println!("{},{}",v1,v2);
+    let a = [4, 3, 2, 1];
+
+    // Iterate the indexing and value in 'a'
+    for (i,v) in a.__ {
+        println!("The {}th element is {}",i+1,v);
+    }
 }
 */
-
-// Fix errors and panics to make it work
 fn main() {
-    let v1 = 251_u16 + 8;
-    let v2 = i16::checked_add(251, 8).unwrap();
-    println!("{},{}",v1,v2);
- }
+   let a = [4, 3, 2, 1];
+
+   // Iterate the indexing and value in 'a'
+   for (i,v) in a.iter().enumerate() {
+       println!("The {}th element is {}",i+1,v);
+   }
+}

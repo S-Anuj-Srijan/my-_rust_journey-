@@ -1,29 +1,66 @@
 //exersice 9
-//Two goals: 1. Modify assert! to make it work 2. Make println! output: 97 - 122
+
 /*
+
+// Fill in the blanks
 fn main() {
-    let mut sum = 0;
-    for i in -3..2 {
-        sum += i
+    let mut count = 0u32;
+
+    println!("Let's count until infinity!");
+
+    // Infinite loop
+    loop {
+        count += 1;
+
+        if count == 3 {
+            println!("three");
+
+            // Skip the rest of this iteration
+            __;
+        }
+
+        println!("{}", count);
+
+        if count == 5 {
+            println!("OK, that's enough");
+
+            __;
+        }
     }
 
-    assert!(sum == -3);
+    assert_eq!(count, 5);
 
-    for c in 'a'..='z' {
-        println!("{}",c);
-    }
+    println!("Success!");
 }
 */
-//Two goals: 1. Modify assert! to make it work 2. Make println! output: 97 - 122
+
+// Fill in the blanks
 fn main() {
-    let mut sum = 0;
-    for i in -3..2 {
-        sum += i
+    let mut count = 0u32;
+
+    println!("Let's count until infinity!");
+
+    // Infinite loop
+    loop {
+        count += 1;
+
+        if count == 3 {
+            println!("three");
+
+            // Skip the rest of this iteration
+            continue;
+        }
+
+        println!("{}", count);
+
+        if count == 5 {
+            println!("OK, that's enough");
+
+            break;
+        }
     }
 
-    assert!(sum == -5);
+    assert_eq!(count, 5);
 
-    for c in 'a'..='z' {
-        println!("{}",c as u8);
-    }
+    println!("Success!");
 }

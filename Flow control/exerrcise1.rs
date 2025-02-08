@@ -1,26 +1,32 @@
 //exersice 1
-// Remove something to make it work
+
 /*
+
+
+// Fill in the blanks
 fn main() {
-    let x: i32 = 5;
-    let mut y: u32 = 5;
+    let n = 5;
 
-    y = x;
-    
-    let z = 10; // Type of z ? 
-
-    println!("Success!");
-}
+    if n < 0 {
+        println!("{} is negative", n);
+    } __ n > 0 {
+        println!("{} is positive", n);
+    } __ {
+        println!("{} is zero", n);
+    }
+} 
 */
 
-// Remove something to make it work
+
+// Fill in the blanks
 fn main() {
-    let x: i32 = 5;
-    let mut y: i32 = 5;
+    let n = 5;
 
-    y = x;
-    
-    let z = 10; // Type of z ? 
-
-    println!("Success!");
-}
+    if n < 0 {
+        println!("{} is negative", n);
+    } else if n > 0 {
+        println!("{} is positive", n);
+    } else {
+        println!("{} is zero", n);
+    }
+} 

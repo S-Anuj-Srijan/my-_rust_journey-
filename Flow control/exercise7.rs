@@ -1,29 +1,35 @@
 //exersice 7
-// Fill the blank to make it work
+
 /*
+
+
+// Fill in the blank
 fn main() {
-    let x = 1_000.000_1; // ?
-    let y: f32 = 0.12; // f32
-    let z = 0.01_f64; // f64
+    let mut n = 0;
+    for i in 0..=100 {
+       if n == 66 {
+           __
+       }
+       n += 1;
+    }
 
-    assert_eq!(type_of(&x), "__".to_string());
+    assert_eq!(n, 66);
+
     println!("Success!");
-}
-
-fn type_of<T>(_: &T) -> String {
-    format!("{}", std::any::type_name::<T>())
 }
 */
 
-// Fill the blank to make it work
+// Fill in the blank
 fn main() {
-    let x = 1_000.000_1; // f64 but 1_000.000_1 is in decimal
-    let _y: f32 = 0.12; // f32
-    let _z = 0.01_f64; // f64
-    assert_eq!(type_of(&x), "f64".to_string());
-    println!("Success!");
-}
+    let mut n = 0;
+    for i in 0..=100 {
+       if n == 66 {
+           break
+       }
+       n += 1;
+    }
 
-fn type_of<T>(_: &T) -> String {
-    format!("{}", std::any::type_name::<T>())
+    assert_eq!(n, 66);
+
+    println!("Success!");
 }

@@ -1,18 +1,40 @@
 //exersice 4
-// Fill the blanks to make it work
-/*
-fn main() {
-    assert_eq!(i8::MAX, __); 
-    assert_eq!(u8::MAX, __); 
 
-    println!("Success!");
-}
+/*
+
+// Fix the errors without adding or removing lines
+fn main() {
+    let names = [String::from("liming"),String::from("hanmeimei")];
+    for name in names {
+        // Do something with name...
+    }
+
+    println!("{:?}", names);
+
+    let numbers = [1, 2, 3];
+    // The elements in numbers are Copy，so there is no move here
+    for n in numbers {
+        // Do something with n...
+    }
+    
+    println!("{:?}", numbers);
+} 
 */
 
-// Fill the blanks to make it work
+// Fix the errors without adding or removing lines
 fn main() {
-    assert_eq!(i8::MAX, 127); 
-    assert_eq!(u8::MAX, 255); 
+    let names = [String::from("liming"),String::from("hanmeimei")];
+    for name in &names {
+        // Do something with name...
+    }
 
-    println!("Success!");
-}
+    println!("{:?}", names);
+
+    let numbers = [1, 2, 3];
+    // The elements in numbers are Copy，so there is no move here
+    for n in &numbers {
+        // Do something with n...
+    }
+    
+    println!("{:?}", numbers);
+} 

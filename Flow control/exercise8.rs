@@ -1,14 +1,36 @@
-//exersice 
+//exersice 8
+
 /*
+// Fill in the blanks
 fn main() {
-    assert!(0.1+0.2==0.3);
+    let mut n = 0;
+    for i in 0..=100 {
+       if n != 66 {
+           n+=1;
+           __;
+       }
+       
+       __
+    }
+
+    assert_eq!(n, 66);
 
     println!("Success!");
 }
 */
-
+// Fill in the blanks
 fn main() {
-    assert!(0.1 as f32+0.2 as f32==0.3 as f32);// happens deu to floating point precsision when 0.1 and 0.2 get added it is not equal to 0.3 its equal to 0.300000000000 
+    let mut n = 0;
+    for i in 0..=100 {
+       if n != 66 {
+           n+=1;
+           continue;
+       }
+       
+       else{break}
+    }
+
+    assert_eq!(n, 66);
 
     println!("Success!");
 }

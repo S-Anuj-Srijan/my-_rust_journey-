@@ -1,21 +1,38 @@
 //exersice 10
-// Fill the blanks
 
 /*
-use std::ops::{Range, RangeInclusive};
+
+// Fill in the blank
 fn main() {
-    assert_eq!((1..__), Range{ start: 1, end: 5 });
-    assert_eq!((1..__), RangeInclusive::new(1, 5));
+    let mut counter = 0;
+
+    let result = loop {
+        counter += 1;
+
+        if counter == 10 {
+            __;
+        }
+    };
+
+    assert_eq!(result, 20);
 
     println!("Success!");
 }
 */
-// Fill the blanks
 
-use std::ops::{Range, RangeInclusive};
+// Fill in the blank
 fn main() {
-    assert_eq!((1..5), Range{ start: 1, end: 5 });
-    assert_eq!((1..=5), RangeInclusive::new(1, 5));
+    let mut counter = 0;
+
+    let result = loop {
+        counter += 1;
+
+        if counter == 10 {
+            break counter*2;
+        }
+    };
+
+    assert_eq!(result, 20);
 
     println!("Success!");
 }

@@ -1,16 +1,41 @@
 //exersice 2
-// Fill the blank
-/*
-fn main() {
-    let v: u16 = 38_u8 as __;
 
-    println!("Success!");
-}
+/*
+
+// Fix the errors
+fn main() {
+    let n = 5;
+
+    let big_n =
+        if n < 10 && n > -10 {
+            println!(", and is a small number, increase ten-fold");
+
+            10 * n
+        } else {
+            println!(", and is a big number, halve the number");
+
+            n / 2.0 ;
+        }
+
+    println!("{} -> {}", n, big_n);
+} 
 */
 
-// Fill the blank
+// Fix the errors
 fn main() {
-    let v: u16 = 38_u8 as u16;
+    let n = 5;
 
-    println!("Success!");
-}
+    let big_n ={
+        if n < 10 && n > -10 {
+            println!(", and is a small number, increase ten-fold");
+
+            10 * n
+        } else {
+            println!(", and is a big number, halve the number");
+
+            n / 2 
+        }
+    };
+
+    println!("{} -> {}", n, big_n);
+} 

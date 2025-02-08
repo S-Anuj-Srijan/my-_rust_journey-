@@ -1,29 +1,22 @@
 //exersice 3
 
 /*
-// Solve it in two ways
-// DON'T let `println!` work
 fn main() {
-    never_return();
+    for n in 1..=100 { // modify this line to make the code work
+        if n == 100 {
+            panic!("NEVER LET THIS RUN")
+        }
+    }
 
-    println!("Failed!");
-}
-
-fn never_return() -> ! {
-    // Implement this function, don't modify the fn signatures
-    
-}
+    println!("Success!");
+} 
 */
-
-// Solve it in two ways
-// DON'T let `println!` work
 fn main() {
-    never_return();
+    for n in 1..100 { // modify this line to make the code work
+        if n == 100 {
+            panic!("NEVER LET THIS RUN")
+        }
+    }
 
-    println!("Failed!");
-}
-
-fn never_return() -> ! {
-    panic!();
-    
-}
+    println!("Success!");
+} 
